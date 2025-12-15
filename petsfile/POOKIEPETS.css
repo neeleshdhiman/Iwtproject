@@ -1,0 +1,71 @@
+.navbar {
+display: flex;
+gap: 40px;
+font-size: 18px;
+padding-left: 20px;
+position: relative;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: rgb(250, 232, 159);
+min-width: 150px;
+box-shadow: 0px 8px 16px 4px rgba(0,0,0,0.2);
+z-index: 1000;
+border-radius: 8px;
+}
+.dropdown-content a {
+color: black;
+padding: 10px 14px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover {
+background-color: #ffffff;
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+ .login-btn {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 8px 18px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;   
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    background-image: linear-gradient(to bottom, rgb(249, 249, 146), beige);
+  }
+  .gradient-box {
+    width: 300px;
+    height: 150px;
+    margin: 50px auto; 
+    background-image: linear-gradient(to right, rgb(246, 246, 111), beige);
+    border: 1px solid #ccc;
+  }
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
